@@ -1,40 +1,22 @@
-class chismosa{
+const Chismosa = require('./Chismosa');
+// Clase abstracta "TiaVecina"
+class TiaVecina extends Chismosa{
             
-    //Atributos
-    #reputacion = 0;
-    #nivelChisme = 0;
-
-    //Constructor
-    constructor(nombre, reputacion, nivelChisme){
-
-        if(this.constructor === chismosa){
-            throw new Error("No es posible crear a una (Chismosa) pura")
-        }
-        this.nombre = nombre;
-        this.#reputacion = reputacion;
-        this.#nivelChisme = nivelChisme;
-    }
-
-    //getters y setters
-    get reputacion(){
-        if(this.#reputacion > 2000){
-            return {precio: this.#reputacion, mensaje: "El nivel de reputacion es: ${}"}
-        }else{
-            return {precio: this.#reputacion, mensaje: "Producto económico"}
-        }
+    constructor (nombre, reputacion, nivelChisme){
+        super(nombre, reputacion, nivelChisme);
     }
     
     //Metodos
     recolectarInfo(){
-        console.log("Se esta recolectando informacion....");
+        console.log("Aprovecha la reunión del barrio para escuchar discretamente");
+        this.setNivelChisme(Math.random() * 2 + 2); 
     }
     contarChisme(){
-        console.log("Se esta contando un chisme.....")
-    }
-    getReputacion(){
-        console.log("Se esta obteniendo la reputacion.....")
-    }
-    getNivelChisme(){
-        console.log("Se esta obteniendo el nivel de chisme.....")
+        console.log("Difunde el chisme mientras ofrece caféFiltra el chisme por estados en WhatsApp");
+        const nivelExageracion = Math.random() < 0.5;
+        this.modificarNivelChisme(1.5);
+        this.modificarReputacion(nivelExageracion ? -2 : 0.5);
     }   
 }
+
+module.exports = TiaVecina;

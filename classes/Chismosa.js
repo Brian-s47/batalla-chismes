@@ -18,15 +18,27 @@ class chismosa{
     
     //Metodos
     recolectarInfo(){
-        console.log("Se esta recolectando informacion....");
+        throw new Error("Este método no tiene implementación porque es abstracto!!")
     }
     contarChisme(){
-        console.log("Se esta contando un chisme.....")
+        throw new Error("Este método no tiene implementación porque es abstracto!!")
     }
-    getReputacion(){
-        console.log("Se esta obteniendo la reputacion.....")
-    }
-    getNivelChisme(){
-        console.log("Se esta obteniendo el nivel de chisme.....")
-    }   
+
+    //getters y setters
+    getReputacion() {
+        return this.#reputacion;
+      }
+    
+      getNivelChisme() {
+        return this.#nivelChisme;
+      } 
+      setReputacion(valor) {
+        this.#reputacion = Math.max(0, Math.min(10, this.#reputacion + valor));
+      }
+    
+      setNivelChisme(delta) {
+        this.#nivelChisme = Math.max(0, Math.min(10, this.#nivelChisme + valor));
+      }
 }
+
+module.exports = Chismosa;
