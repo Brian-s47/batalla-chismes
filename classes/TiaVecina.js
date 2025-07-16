@@ -8,14 +8,15 @@ class TiaVecina extends Chismosa{
     
     //Metodos
     recolectarInfo(){
+        console.log(`L@ ti@ Vecin@:`);
         console.log("Aprovecha la reunión del barrio para escuchar discretamente");
         this.setNivelChisme(Math.random() * 2 + 2); 
     }
     contarChisme(){
-        console.log("Difunde el chisme mientras ofrece caféFiltra el chisme por estados en WhatsApp");
+        console.log("Difunde el chisme mientras ofrece café, Filtra el chisme por estados en WhatsApp");
         const nivelExageracion = Math.random() < 0.5;
-        this.modificarNivelChisme(1.5);
-        this.modificarReputacion(nivelExageracion ? -2 : 0.5);
+        this.setNivelChisme(1.5);
+        this.setReputacion(nivelExageracion ? -2 : 0.5);
     }   
 }
 

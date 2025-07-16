@@ -1,5 +1,5 @@
 // Clase abstracta "chismosa"
-class chismosa{
+class Chismosa{
             
     //Atributos
     #reputacion = 0;
@@ -8,7 +8,7 @@ class chismosa{
     //Constructor
     constructor(nombre, reputacion, nivelChisme){
 
-        if(this.constructor === chismosa){
+        if(this.constructor === Chismosa){
             throw new Error("No es posible crear a una (Chismosa) pura")
         }
         this.nombre = nombre;
@@ -36,7 +36,7 @@ class chismosa{
         this.#reputacion = Math.max(0, Math.min(10, this.#reputacion + valor));
       }
     
-      setNivelChisme(delta) {
+      setNivelChisme(valor) {
         this.#nivelChisme = Math.max(0, Math.min(10, this.#nivelChisme + valor));
       }
 }

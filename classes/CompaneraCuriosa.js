@@ -8,13 +8,14 @@ class CompaneraCuriosa extends Chismosa{
     
     //Metodos
     recolectarInfo(){
+        console.log(`L@ Compañer@ Curios@:`);
         console.log("Hace preguntas aparentemente profesionales a los compañeros de trabajo");
-        this.modificarNivelChisme(Math.random()); 
+        this.setNivelChisme(Math.random()); 
     }
     contarChisme(){
         console.log("Comenta el chisme como ejemplo de vida en el trabajo");
-        this.modificarNivelChisme(0.5);
-        this.modificarReputacion(1);
+        this.setNivelChisme(0.5);
+        this.setReputacion(1);
     }  
 }
 

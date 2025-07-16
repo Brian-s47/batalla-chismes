@@ -1,6 +1,6 @@
 # 👑 Batalla de Chismes - Reinas del Chisme
 
-Una simulación en JavaScript orientada a objetos donde varias **chismosas profesionales** compiten para ver quién hace el chisme más viral. Cada una tiene un estilo único para recolectar información y difundir chismes. Solo una se coronará como la **reina del chisme**.
+Una simulación en JavaScript orientada a objetos donde varias **chismosas profesionales** compiten para ver quién hace el chisme más viral. Cada una tiene un estilo único para recolectar información y difundir chismes. Solo una se coronará como la **reina del chisme**; Para esto tambien se implemento una generacion de numeros aleatorios para el inicio de cada tipo de Chismosa y hacerlo de forma mas dinamica, Adicional se pueden modificar la cantidad de rondas en el ciclo correspondiente. 
 
 ---
 
@@ -49,7 +49,7 @@ Finalmente, se imprime quién ganó la batalla del chisme 🏆
 npm install
 ```
 
-Asegúrate de tener Node.js instalado. El proyecto usa la librería [`chalk`](https://www.npmjs.com/package/chalk) para dar estilo a la terminal.
+Asegúrate de tener Node.js instalado. El proyecto usa la librería [`chalk`](https://www.npmjs.com/package/chalk) para dar estilo a la terminal con : npm install chalk@4.1.2
 
 ---
 
@@ -82,7 +82,7 @@ Verás en la consola cada ronda, acciones de las chismosas y las estadísticas f
 
 ## ✍️ Autores
 
-Proyecto realizado por [Tu Nombre Aquí] (o pareja si es en grupo).
+Proyecto realizado por Brian Fair Suarez Porras
 
 ---
 
@@ -94,4 +94,4 @@ Proyecto realizado por [Tu Nombre Aquí] (o pareja si es en grupo).
 
 ## 📝 Licencia
 
-Uso educativo. No divulgar chismes reales fuera de este proyecto 😅
+Uso educativo.

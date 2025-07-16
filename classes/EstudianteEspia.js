@@ -8,14 +8,15 @@ class EstudianteEspia extends Chismosa{
     
     //Metodos
     recolectarInfo(){
+        console.log(`L@ estudiante espia:`);
         console.log("Lee chats ajenos desde el último puesto del salón");
-        this.modificarNivelChisme(Math.random() * 2 + 1);
+        this.setNivelChisme(Math.random() * 2 + 1);
     }
     contarChisme(){
         console.log("Filtra el chisme por estados en WhatsApp")
         const NivelSerDescubierta = Math.random() < 0.3;
-        this.modificarNivelChisme(1.5);
-        this.modificarReputacion(NivelSerDescubierta ? -1.5 : 0.5);
+        this.setNivelChisme(1.5);
+        this.setReputacion(NivelSerDescubierta ? -1.5 : 0.5);
     }   
 }
 
